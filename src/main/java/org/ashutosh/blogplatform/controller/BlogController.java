@@ -26,8 +26,7 @@ public class BlogController {
     }
 
     @GetMapping
-    public ResponseEntity<Page<Blog>>
-    getAllBlogs(@RequestParam(defaultValue = "0") int page,
+    public ResponseEntity<Page<Blog>> getAllBlogs(@RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size,
             @RequestParam(defaultValue = "createdAt") String sortBy) {
 
